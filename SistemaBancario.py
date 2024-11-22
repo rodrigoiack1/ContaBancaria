@@ -23,7 +23,6 @@ class ContaBancaria:
     def consultar_saldo(self):
         print(f"Saldo de {self.titular}: R${self.saldo:.2f}")
 
-# Função para exibir o menu
 def exibir_menu():
     print("\nSistema Bancário")
     print("1. Criar conta")
@@ -32,9 +31,8 @@ def exibir_menu():
     print("4. Consultar saldo")
     print("5. Sair")
 
-# Função principal do sistema bancário
 def main():
-    conta = None  # Inicialmente, não há conta criada
+    conta = None  
 
     while True:
         exibir_menu()
@@ -77,5 +75,4 @@ def main():
         else:
             print("Opção inválida. Tente novamente.")
 
-# Chama a função principal para iniciar o sistema bancário
 main()
